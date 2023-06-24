@@ -7,22 +7,20 @@ import { useEffect, useState } from "react";
 
 const Nav = () => {
   return (
-    <nav>
-        <div className='flex justify-between gap-x-8 w-full mb-16 pt-3'>
+        <nav className='flex-between gap-x-8 w-full mb-16 pt-3'>
         <Link href='/' className='flex gap-2 flex-center'>
         <Image
-          src='/assets/logo-white.svg'
+          src='/assets/logo.svg'
           alt='logo'
-          width={60}
-          height={60}
+          width={100}
+          height={100}
           className='object-contain'
         />
         <p className='logo_text'>DEVCUT</p>
       </Link>
 
-        </div>
+        </nav>
 
-    </nav>
   )
 }
 

@@ -4,7 +4,7 @@ const Home = () => {
     <h1 className="head_text text-center">
         Welcome To My Blog
         <br className="max-md:hidden" />
-        <span className="orange_gradient text-center">DEV-CUT</span>
+        <span className="blue_gradient text-center">DEV-CUT</span>
     </h1>
     <p className="desc text-center">Made by ZaneFerns360
     </p>
