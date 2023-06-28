@@ -1,4 +1,3 @@
-import HelloWorld from './posts/hello.mdx'
 
 const Home = () => {
   return (
@@ -10,7 +9,7 @@ const Home = () => {
     </h1>
     <p className="desc text-center">Made by ZaneFerns360
     </p>
-    <HelloWorld />
+    
    </section>
 
   )

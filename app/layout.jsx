@@ -1,6 +1,6 @@
 import 'style/global.css';
 import Nav from 'components/Nav';
-
+import Posts from './Posts'
 export const metadata ={
     title:"Devcut",
     description:"Discover and share AI-generated prompts for your next creative project."
@@ -18,6 +18,7 @@ const RootLayout = ({children}) => {
               <Nav/>
                {children}
                 </main>
+                <Posts></Posts>
         </body>
         </html>
   )

@@ -10,10 +10,10 @@ const Nav = () => {
         <nav className='flex-between gap-x-1 w-full mb-16 mt-4 max-sm:mt-8'>
         <Link href='/' className='flex gap-2 flex-center max-sm:hidden'>
         <Image
-          src='/assets/logo.svg'
+          src='/assets/logo-no-background.svg'
           alt='logo'
-          width={130}
-          height={100}
+          width={90}
+          height={50}
           className='object-contain'
         />
         
