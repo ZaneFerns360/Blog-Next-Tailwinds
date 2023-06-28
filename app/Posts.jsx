@@ -1,4 +1,3 @@
-"use client";
 import HelloWorld from './posts/hello.mdx'
 
 const Posts= () => {

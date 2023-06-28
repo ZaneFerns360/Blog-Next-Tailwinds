@@ -1,6 +1,10 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+The Goal is to use mdx to create posts which render to HTML using @next/mdx.
 
 ## Prerequisites:
+- @next/mdx
+- grey matter
+- @tailwindcss/typography
 - NodeJs
 - npm or yarn or pnpm
 
