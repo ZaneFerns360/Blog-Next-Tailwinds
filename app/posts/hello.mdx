@@ -4,11 +4,22 @@ author: 'Zane Fernandes'
 publishDate: 'June 28,2023'
 ---
 
+import Image from "next/image";
+
+
 # Hello 
 
 ## Here is a post:
 
 - Yes 
 - Tes
+
+<Image
+          src='/assets/logo-no-background.svg'
+          alt='logo'
+          width={90}
+          height={50}
+          className=''
+        />
 
 export default ({children}) => <div className='prose'>{children}</div>

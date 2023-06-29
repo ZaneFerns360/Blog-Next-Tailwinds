@@ -2,7 +2,7 @@ import HelloWorld from './posts/hello.mdx'
 
 const Posts= () => {
     return (
-     <section className="w-full flex-center flex-col text-black">
+     <section className="w-full flex-center flex-col">
       <div className='text-center'>
         <HelloWorld/>
       </div>
