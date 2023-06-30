@@ -1,4 +1,4 @@
-import HelloWorld from './posts/hello.mdx'
+import HelloWorld from './content/hello.mdx'
 
 const Posts= () => {
     return (

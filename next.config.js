@@ -20,3 +20,5 @@ const nextConfig = {
   module.exports = withMDX({
     pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdx'],
   });
+
+  
