@@ -2,9 +2,8 @@
 title: 'Hello'
 author: 'Zane Fernandes'
 publishDate: 'June 28,2023'
+image: '/assets/logo-no-background.svg'
 ---
-
-import Image from "next/image";
 
 
 # Hello 
@@ -14,12 +13,5 @@ import Image from "next/image";
 - Yes 
 - Tes
 
-<Image
-          src='/assets/logo-no-background.svg'
-          alt='logo'
-          width={90}
-          height={50}
-          className=''
-        />
 
 export default ({children}) => <div className='prose'>{children}</div>

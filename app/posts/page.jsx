@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { getAllPostsMeta } from '@/lib/mdx'
+import Image from "next/image";
 
 const Page = async () => {
   const posts = await getAllPostsMeta()
@@ -15,7 +16,11 @@ const Page = async () => {
               key={post?.title}
               className='p-8 rounded-md shadow-md'
             >
+              
               <h3 className='text-xl font-semibold'>{post.title}</h3>
+              {post.image && (
+                <Image src={post.image} alt='Post Image' width={90} height={50} className='object-contain' />
+              )}
               <p className='mt-4 text-sm'>{post.author}</p>
               <time className='text-[12px] text-gray-400'>
                 {post.publishDate}
