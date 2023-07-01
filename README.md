@@ -3,7 +3,6 @@ The Goal is to use mdx to create posts which render to HTML using @next/mdx.
 
 ## Prerequisites:
 - @next/mdx
-- grey matter
 - @tailwindcss/typography
 - NodeJs
 - npm or yarn or pnpm
