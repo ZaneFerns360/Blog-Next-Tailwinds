@@ -18,7 +18,7 @@ const Nav = () => {
         />
         
       </Link>
-      <Link href='/posts'>Posts</Link>
+      <Link href='/posts' className='font-bold text-2xl hover:text-grey'>Posts</Link>
       <div className='flex flex-center'>
         <form className='w-96 flex max-sm:w-60'>
           <input type='text' className='search_input' placeholder='Search for'/>
