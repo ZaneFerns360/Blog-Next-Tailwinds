@@ -6,6 +6,12 @@ const Page = async () => {
   const posts = await getAllPostsMeta()
 
   return (
+    <div>
+    <div className='flex flex-center'>
+        <form className='w-96 flex max-sm:w-60'>
+          <input type='text' className='search_input' placeholder='Search for'/>
+          </form>
+          </div>
     <section className='py-24'>
       <div className='container'>
         <h1 className='text-3xl font-bold'>All Posts</h1>
@@ -29,7 +35,7 @@ const Page = async () => {
           ))}
         </div>
       </div>
-    </section>
+    </section></div>
   )
 }
 
