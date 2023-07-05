@@ -1,8 +1,9 @@
 import 'style/global.css';
 import Nav from 'components/Nav';
+
 export const metadata ={
     title:"Devcut",
-    description:"Discover and share AI-generated prompts for your next creative project."
+    description:"Discover and share AI-generated prompts for your next creative project.",
 }
 
 
