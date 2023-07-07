@@ -11,11 +11,14 @@ export async function generateMetadata({ params }) {
 }
 
 const Page = async ({ params }) => {
-  const { content } = await getPageContent(params.slug)
+  const { content, meta } = await getPageContent(params.slug)
 
   return (
     <section className='py-24'>
-      <div className='container py-4 prose'>{content}</div>
+      <div className='container prose items-center'>
+        {content}
+        This article was written by <p className='mt-4 text-sm'>{meta.author}</p>
+      </div>
     </section>
   )
 }

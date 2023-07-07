@@ -1,0 +1,48 @@
+---
+title: 'Using Nipe- A Tor gateway'
+author: 'Zane Fernandes'
+publishDate: 'July 7,2023'
+image: '/assets/tor.png'
+---
+
+<img src='/assets/tor.png' alt="Girl in a jacket" width="350" height="300"/>
+
+# Using Nipe as a gateway to Tor
+
+## How to route all your traffic through Tor:
+
+Nipe is an open source application bulit on Pearl and designed to route all your traffic through Tor
+## Prerequisites:
+
+- Linux
+- Git
+
+Source: [Nipe by htrgouvea](https://github.com/htrgouvea/nipe/)
+
+Fire up the terminal and launch:
+
+```
+git clone https://github.com/htrgouvea/nipe && cd nipe
+```
+
+Install libs and dependencies:
+```
+cpanm --installdeps .
+```
+Install Pearl modules: (Always select root option while configurating)
+```
+cpan install Switch JSON LWP::UserAgent Config::Simple
+```
+Note: Always run Nipe in root:
+```
+perl nipe.pl install
+```
+Using Nipe: 
+```
+  perl nipe.pl start
+  perl nipe.pl stop
+  perl nipe.pl restart
+  perl nipe.pl status
+```
+
+
