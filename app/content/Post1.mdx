@@ -6,8 +6,6 @@ image: '/assets/tor.png'
 description: 'Learn how to use Nipe to route your internet traffic through the Tor network for increased privacy and security.'
 ---
 
-<img src='/assets/tor.png' alt="Girl in a jacket" width="350" height="300"/>
-
 # Using Nipe as a gateway to Tor
 
 ## How to route all your traffic through Tor:
@@ -23,7 +21,8 @@ Source: [Nipe by htrgouvea](https://github.com/htrgouvea/nipe/)
 Fire up the terminal and launch:
 
 ```
-git clone https://github.com/htrgouvea/nipe && cd nipe
+git clone https://github.com/htrgouvea/nipe 
+&& cd nipe
 ```
 
 Install libs and dependencies:
@@ -32,7 +31,8 @@ cpanm --installdeps .
 ```
 Install Pearl modules: (Always select root option while configurating)
 ```
-cpan install Switch JSON LWP::UserAgent Config::Simple
+cpan install Switch JSON LWP::UserAgent
+Config::Simple
 ```
 Note: Always run Nipe in root:
 ```

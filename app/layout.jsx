@@ -3,7 +3,7 @@ import Nav from 'components/Nav';
 
 export const metadata ={
     title:"Devcut",
-    description:"Discover and share AI-generated prompts for your next creative project.",
+    description:"A Blog for developers,cybersecurity enthusiaths & linux users",
 }
 
 
