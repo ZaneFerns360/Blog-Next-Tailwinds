@@ -8,14 +8,13 @@ const Home = async () => {
   return (
     <div>
       <section className="w-full flex-center flex-col">
-        <h1 className="head_text text-center">
+        <h1 className="head_text text-center py-2">
           Welcome To My Blog
           <br className="max-md:hidden" />
           <span className="blue_gradient text-center">DEVCUT</span>
-        </h1>
-        <p className="desc text-center">Made by ZaneFerns360</p>
+        </h1><Link href="https://github.com/ZaneFerns360"><p className="desc text-center">Made by ZaneFerns360</p></Link>
       </section>
-      <div className="py-9">
+      <div className="py-7">
         <h2 className="head_text text-center">
           <span className="orange_gradient text-center">Latest Posts:</span>
         </h2>
