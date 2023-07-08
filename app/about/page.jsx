@@ -8,7 +8,7 @@ const About = () => {
      <h1 className="head_text text-center">
         
         <br className="max-md:hidden" />
-        <span className="blue_gradient text-center">I'm Zane</span>
+        <span className="blue_gradient text-center">I&#39;m Zane</span>
     </h1>
     <p className='mt-4 text-3xL font-bold leading-[1.15] '>Studying computer engineering from Mumbai University</p>
     <div className='flex py-9'> 

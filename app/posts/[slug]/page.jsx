@@ -7,7 +7,13 @@ const getPageContent = async slug => {
 
 export async function generateMetadata({ params }) {
   const { meta } = await getPageContent(params.slug)
-  return { title: meta.title }
+  return {
+    title: meta.title,
+    author: meta.author,
+    publishDate: meta.publishDate,
+    image: meta.image,
+    description: meta.description
+  }
 }
 
 const Page = async ({ params }) => {
