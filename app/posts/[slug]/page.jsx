@@ -14,8 +14,8 @@ const Page = async ({ params }) => {
   const { content, meta } = await getPageContent(params.slug)
 
   return (
-    <section className='py-24'>
-      <div className='container prose items-center'>
+    <section className='py-20'>
+      <div className='container prose max-w-full items-center'>
         {content}
         This article was written by <p className='mt-4 text-sm'>{meta.author}</p>
       </div>
