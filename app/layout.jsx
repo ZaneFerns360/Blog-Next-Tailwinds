@@ -1,5 +1,6 @@
 import 'style/global.css';
 import Nav from 'components/Nav';
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata ={
     title:"Devcut",
@@ -17,7 +18,7 @@ const RootLayout = ({children}) => {
             <main className='app'>
               <Nav/>
                {children}
-
+               <Analytics />
                 </main>
                 
         </body>

@@ -11,7 +11,7 @@ const Page = async () => {
       <section className='py-20'>
         <div className='container'>
           <h1 className='text-3xl font-bold'>All Posts</h1>
-          <div className='grid grid-cols-3 gap-6 mt-6'>
+          <div className='grid grid-cols-1 md:grid-cols-3 gap-6 mt-6'>
             {posts?.map(post => (
               <Link
                 href={`posts/${post.slug}`}
