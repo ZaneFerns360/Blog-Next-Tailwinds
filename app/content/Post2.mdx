@@ -1,20 +1,37 @@
 ---
-title: 'Second Blog Post'
-author: 'Zane Fernandess'
-publishDate: 'March 5th, 2023'
-image: '/assets/logo-no-background.svg'
+title: 'Virtualbox stuck at 20% on linux?'
+author: 'Zane Fernandes'
+publishDate: 'July 9,2023'
+image: '/assets/virtualbox.jpg'
+description: 'A fix for virtualbox stuck at 20% on linux'
 ---
 
-# This is our second post
+# Virtualbox stuck at 20%?
 
-Here is a regular paragraph
+## Don't worry there is a quick fix: Disable Intel IBT
 
-here is a list:
+IBT is an Intel based technology meant to protect the kernel from making extensive use of indirect branches.
+IBT is meant as a defense against jump-oriented programming; it works by trying to ensure that the target of every indirect branch is, in fact, intended to be reached that way.  
 
-- Item one
-- Item two
-- Item three
+Unfortunately using IBT creates problems with non standard kernel modules like the VirtualBox kernel modules on Fedora & Arch linux distros.
+## Fire up the terminal and input the commands:
 
-## This is an h2 element
+Source: [Arch linux wiki](https://bbs.archlinux.org/viewtopic.php?id=277500)
 
-<img src='/assets/logo-no-background.svg' alt="Girl in a jacket" width="500" height="600"/>
+
+- Example of the fix for Fedora: 
+```
+sudo grubby --args=ibt=off --update-kernel 
+/boot/vmlinuz-6.3.11-200.fc38.x86_64
+```
+
+- For Permanent fix:
+Add it to /etc/default/grub like this:
+```
+GRUB_CMDLINE_LINUX_DEFAULT=
+"loglevel=3 quiet ibt=off"
+```
+then run:
+```
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+```
