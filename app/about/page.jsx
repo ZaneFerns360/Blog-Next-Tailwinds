@@ -16,7 +16,9 @@ const About = () => {
         <br className="max-md:hidden" />
         <span className="blue_gradient text-center">I&#39;m Zane</span>
     </h1>
-    <p className='mt-4 text-2xl font-bold leading-[1.15] '>Studying Computer engineering from Mumbai University</p>
+    <p className='mt-4 text-xl font-bold leading-[1.15] '>Studying Computer engineering from Mumbai University</p>
+    <p className='mt-4 text-xl font-bold leading-[1.15] '>I am adept in frontend with frameworks like React & Next Js</p>
+    <p className='mt-4 text-lg font-bold leading-[1.15] '>Feel free to contact me or give me feedback.</p>
     <div className='flex py-9'> 
    <Link href="https://github.com/ZaneFerns360"><Image src='/assets/github-mark.png' className='mr-6' alt='Github' width={50} height={50}/></Link>
    <Link href="https://www.linkedin.com/in/zane-fernandes-b46b75264"><Image src='/assets/linkedin.svg' className='mr-6' alt='Linkedin' width={50} height={50}/></Link>
