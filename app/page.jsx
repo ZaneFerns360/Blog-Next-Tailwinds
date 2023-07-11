@@ -24,7 +24,7 @@ const Home = async () => {
               <Link
                 href={`posts/${post.slug}`}
                 key={post?.title}
-                className='p-8 rounded-md shadow-md flex hover:bg-blue-400'
+                className='p-8 rounded-md shadow-md flex hover:bg-blue-400 pr-2'
               >
                 <h3 className='text-2xl font-semibold'>{post.title}</h3>
                 <p className='mt-2 text-sm px-10'>By {post.author}</p>

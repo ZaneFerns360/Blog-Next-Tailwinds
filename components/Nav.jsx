@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Nav = () => {
   return (
-        <nav className='flex-between gap-x-1 w-full mb-2 mt-4 max-sm:gap-x-0'>
+        <nav className='flex-between gap-x-1 w-full mb-2 mt-4 max-sm:gap-x-0 min-w-[371px]'>
         <Link href='/' className='flex gap-2 flex-center max-sm:gap-0'>
         <Image
           src='/assets/logo-no-background.svg'
