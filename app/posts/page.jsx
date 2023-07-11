@@ -13,11 +13,8 @@ const Page = async () => {
           <h1 className='text-3xl font-bold'>All Posts</h1>
           <div className='grid grid-cols-1 md:grid-cols-3 gap-6 mt-6'>
             {posts?.map(post => (
-              <Link
-                href={`posts/${post.slug}`}
-                key={post?.title}
-                className='p-8 rounded-md shadow-md'
-              >
+              <Link href={`posts/${encodeURIComponent(post.title)}`} key={post?.title} className='p-8 rounded-md shadow-md'>
+
                 <h3 className='text-xl font-semibold'>{post.title}</h3>
                 {post.image && (
                   <Image src={post.image} alt='Post Image' width={90} height={50} className='object-contain' />
