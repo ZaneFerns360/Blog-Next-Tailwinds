@@ -1,9 +1,15 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 The Goal is to use mdx to create posts which render to HTML using @next/mdx.
 
+## Features:
+
+- High sever side performance from next-mdx-remote
+- Complete SEO for every blog with metadata  
+- Dynamic links for every blog
+- Beauty of @tailwindscss/typography plugin 
+
 ## Prerequisites:
-- @next/mdx
-- @tailwindcss/typography
+
 - NodeJs
 - npm or yarn or pnpm
 
