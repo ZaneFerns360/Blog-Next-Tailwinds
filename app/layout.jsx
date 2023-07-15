@@ -1,5 +1,6 @@
 import 'style/global.css';
 import Nav from 'components/Nav';
+import Provider from '../components/Provider';
 import { Analytics } from '@vercel/analytics/react';
 
 export const metadata ={
@@ -12,6 +13,7 @@ const RootLayout = ({children}) => {
   return (
     <html lang='en'>
         <body>
+          <Provider>
             <div className='main'>
                 <div className='gradient'/>
             </div>
@@ -20,7 +22,7 @@ const RootLayout = ({children}) => {
                {children}
                <Analytics />
                 </main>
-                
+                </Provider> 
         </body>
         </html>
   )

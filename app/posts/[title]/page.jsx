@@ -22,7 +22,7 @@ const Page = async ({ params }) => {
 
   return (
     <section className='py-20'>
-      <div className='container prose items-center sm:pr-0 pl-9 pr-2'>
+      <div className='container prose items-center sm:pr-0 pl-10 pr-2'>
         <Image
           src={meta.image}
           alt='Post Image'

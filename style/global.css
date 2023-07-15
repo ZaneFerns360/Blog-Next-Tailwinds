@@ -82,7 +82,7 @@
 }
 
 .outline_btn {
-    @apply rounded-full border border-black bg-transparent py-1.5 px-5 text-black transition-all hover:bg-black hover:text-white text-center text-sm font-inter flex items-center justify-center;
+    @apply rounded-full border border-black bg-transparent py-1.5 px-5 text-black transition-all hover:bg-black hover:text-white text-center text-lg font-inter flex items-center justify-center;
 }
 
 .head_text {
@@ -141,7 +141,7 @@
 }
 
 .dropdown {
-    @apply absolute left-1/2 top-full mt-1 p-5 rounded-lg bg-blue-500 min-w-[210px] max-w-[350px] flex flex-row gap-2 justify-center items-center transform -translate-x-1/2;
+    @apply absolute left-1/2 top-full p-5 rounded-lg bg-blue-500 min-w-[210px] max-w-[350px] flex flex-row gap-2 justify-center items-center transform -translate-x-1/2;
   }
   
 
