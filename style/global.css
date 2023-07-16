@@ -78,7 +78,7 @@
 }
 
 .black_btn {
-    @apply rounded-full border border-black bg-black py-1.5 px-5 text-white transition-all hover:bg-white hover:text-black text-center text-lg font-inter flex items-center justify-center;
+    @apply rounded-full border border-black bg-black py-1.5 px-5 text-white transition-all hover:bg-white hover:text-black text-center text-lg font-inter flex items-center justify-center max-sm:text-lg max-sm:px-2 max-sm:py-2.5;
 }
 
 .outline_btn {
@@ -141,9 +141,12 @@
 }
 
 .dropdown {
-    @apply absolute left-1/2 top-full p-5 rounded-lg bg-blue-500 min-w-[210px] max-w-[350px] flex flex-row gap-2 justify-center items-center transform -translate-x-1/2;
+    @apply absolute left-1/2 top-full p-5 rounded-lg bg-blue-500 min-w-[210px] max-w-[350px] flex flex-row gap-2 justify-center items-center transform -translate-x-1/2 ;
   }
-  
+
+.dropdown2 {
+    @apply absolute right-0 top-full mt-3 w-full p-5 rounded-lg bg-white min-w-[210px] flex flex-col gap-2 justify-end items-end;
+}
 
 .dropdown_link {
     @apply text-sm font-inter text-gray-700 hover:text-gray-500 font-medium;
@@ -170,3 +173,8 @@
     @apply flex justify-between items-center;
 }
 
+@media (max-width: 640px) {
+    .logo-image {
+      width: 80px;
+    }
+  }

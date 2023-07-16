@@ -20,12 +20,13 @@ const Nav = () => {
         <nav className='flex-between gap-x-1 w-full mb-2 mt-4 max-sm:gap-x-0 min-w-[360px]'>
         <Link href='/' className='flex gap-2 flex-center pl-1 max-sm:gap-0'>
         <Image
-          src='/assets/logo-no-background.svg'
-          alt='logo'
-          width={90}
-          height={50}
-          className='object-contain'
-        />
+  src='/assets/logo-no-background.svg'
+  alt='logo'
+  width={90}
+  height={50}
+  className='object-contain logo-image'
+/>
+
         
       </Link>
       <Link href='/posts' className='black_btn'>All Posts</Link>
@@ -37,7 +38,7 @@ const Nav = () => {
 
             <div className='sm:flex hidden'>
         {session?.user ? (
-          <div className='flex gap-3 md:gap-5'>
+          <div className='flex items-center gap-3 md:gap-5'>
 
             <button type='button' onClick={signOut} className='outline_btn'>
               Sign Out
@@ -71,7 +72,65 @@ const Nav = () => {
           </>
         )}
       </div>
+      <div className='sm:hidden flex relative'>
+        {session?.user ? (
+          <div className='flex'>
+            <Image
+              src={session?.user.image}
+              width={50}
+              height={50}
+              className='rounded-full'
+              alt='profile'
+              onClick={() => setToggleDropdown2(!toggleDropdown2)}
+            />
 
+            {toggleDropdown2 && (
+              <div className='dropdown2'>
+                <Link
+                  href='/profile'
+                  className='dropdown_link'
+                  onClick={() => setToggleDropdown2(false)}
+                >
+                  My Profile
+                </Link>
+                <Link
+                  href='/create-prompt'
+                  className='dropdown_link'
+                  onClick={() => setToggleDropdown2(false)}
+                >
+                  Create Prompt
+                </Link>
+                <button
+                  type='button'
+                  onClick={() => {
+                    setToggleDropdown2(false);
+                    signOut();
+                  }}
+                  className='mt-5 w-full black_btn'
+                >
+                  Sign Out
+                </button>
+              </div>
+            )}
+          </div>
+        ) : (
+          <>
+            {providers &&
+              Object.values(providers).map((provider) => (
+                <button
+                  type='button'
+                  key={provider.name}
+                  onClick={() => {
+                    signIn(provider.id);
+                  }}
+                  className='black_btn'
+                >
+                  Sign in
+                </button>
+              ))}
+          </>
+        )}
+      </div>
         </nav>
 
   )
